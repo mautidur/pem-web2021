@@ -1,0 +1,1 @@
+alert("Hello, right now im using JS esternal");
