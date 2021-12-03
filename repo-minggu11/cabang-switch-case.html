@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <title>Javascript season 2</title>
+    </head>
+    <body>
+        <script>
+            var ans = prompt("kamu beruntung! silahkan pilih angka 1-5");
+            var prize = "";
+            switch(ans){
+                case "1":
+                    prize = "free 10 roll";
+                    break;
+                case "2":
+                    prize = "free 20 roll";
+                    break;
+                case "3":
+                    prize = "pick any SSR";
+                    break;
+                case "4":
+                    prize = "free 10 premium roll";
+                    break;
+                case "5":
+                    prize = "zonk kekw";
+                    break;
+                default:
+                    document.write("<p>Opps! salah pilih nich</p>");
+            }
+            if(prize === ""){
+                document.write("<p>Kamu gagal mendapatkan hadiah</p>");
+            }else{
+                document.write("<h2> Selamat, kamu dapat "+ prize +"</h2>");
+            }
+        </script>
+    </body>
+</html>

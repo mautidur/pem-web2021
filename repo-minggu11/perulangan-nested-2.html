@@ -1,0 +1,17 @@
+<html lang="en">
+    <head>
+        <title>Javascript season 2</title>
+    </head>
+    <body>
+        <script>
+            var ulangi = confirm("apakah ingin diulangi?");
+            var counter = 0;
+            while (ulangi){
+                counter++;
+                var bintang = "*".repeat(counter)+"<br>";
+                document.write(counter+": "+bintang);
+                ulangi = confirm("pengen diulangin lagi?");
+            }
+        </script>
+    </body>
+</html>
