@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>WANDERLUST</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/reset.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/carousel.css" />
+      </head>
+      <body>
+        <!-- HEADER -->
+        <header class="site-header">
+          <div class="wrapper site-header__wrapper">
+            <div class="site-header__start">
+                <a href="index.html" class="brand">WANDERLUST</a>
+            </div>
+            <div class="site-header__middle">
+                <nav class="nav">
+                    <button class="nav__toggle" aria-expanded="false" type="button">
+                    menu
+                    </button>
+                    <ul class="nav__wrapper">
+                        <li class="nav__item"><a href="index.html">Home</a></li>
+                        <li class="nav__item"><a href="#footer-basic">About</a></li>
+                        <li class="nav__item"><a href="#">Our Product</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="site-header__end">
+                <a href="signup.html">Register Now</a>
+            </div>
+          </div>
+        </header>
+        <!-- HEADER -->
+        <!-- TAGLINE DSB-->
+        <div style="background-image: url('image/bg1.png'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+            <br>
+            <br>
+            <br>
+            <div id="boxescontent">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1</div>
+                        <img src="image/re (3).jpg" style="height: 678px; width: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2</div>
+                        <img src="image/cont-3 (1).jpg" style="height: 678px; width: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3</div>
+                        <img src="image/cont-3 (2).jpg" style="height: 678px; width: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4</div>
+                        <img src="image/cont-3 (3).jpg" style="height: 678px; width: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                    </div>
+                    <script>
+                        var slideIndex = 0;
+                        showSlides();
+                        function showSlides() {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {slideIndex = 1}    
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                            setTimeout(showSlides, 2000);
+                        }
+                    </script>
+                    <br>
+                    <div style="font-size: 40px; font-weight: bold;margin-left: 20px;">Icefield Parkway</div>
+                    <div style="font-size: 30px; font-weight: bold; margin-left: 20px;">Canada</div>
+                    <div style="font-size: 20px; font-style: italic; margin-left: 20px;">The Icefields Parkwayis a 230 km (140 mi) long scenic road that parallels the Continental Divide</div>
+                    <br>
+                    <div id="boxescontent1">
+                        <h1 style="font-size: 20px; font-weight: bold; margin-top: 5px;">Most Rellevant Review</h1>
+                        <p style="margin-top: 5px;">Words can't describe how beautiful the drive is. Every minute you see amazing views all around, you just can't take in the beauty. So many places to stop to take photos and stunning waterfalls and the Glacier you can climb on way up to Jasper. Allow a day so you can go slowly and same on return trip. Take plenty to drink and snacks as nowhere really to stop off and have plenty of fuel. Travelled all over world and this was one of highlights for us and best thing we did on 3 week trip to Canada</p>
+                        <h1 style="font-style: italic; font-weight: bold;">-EleanorBristol</h1>
+                        <li style=" list-style: none; margin-top: 5px;"><ul style="display: inline-flex;">
+                            <li><img src="image/ratefull.png"></li>
+                            <li style="margin-left: 5px;"><img src="image/ratefull.png"></li>
+                            <li style="margin-left: 5px;"><img src="image/ratefull.png"></li>
+                            <li style="margin-left: 5px;"><img src="image/ratefull.png"></li>
+                            <li style="margin-left: 5px;"><img src="image/ratehalf.png"></li>
+                        </ul></li>
+                    </div>
+                    <br>
+                    <li style=" list-style: none;"><ul style="display: inline-flex;">
+                        <li><button id="btncontent1" onclick="rick()" style="background-color:#374132; width: 500px; color: white; margin-left: 20px; border: 0;">Add to Maps</button></li>
+                            <script>
+                                function rick() {
+                                alert("We're no strangers to love");
+                                }
+                            </script>
+                        <li><button id="btncontent2" onclick="myFunction()" style="background-color:#54668C; width: 500px; color: white; margin-left: 13%; border: 0;">Add to Packages</button></li>
+                        <div id="addchart" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Sorry, We cant do that right now :(</p>
+                            </div>
+                        </div>
+                        <script>
+                            var modal = document.getElementById("addchart");
+                            var btn = document.getElementById("btncontent2");
+                            var span = document.getElementsByClassName("close")[0];
+                            btn.onclick = function() {
+                                modal.style.display = "block";
+                            }
+                            span.onclick = function() {
+                                modal.style.display = "none";
+                            }
+                            window.onclick = function(event) {
+                                if (event.target == modal) {
+                                modal.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </ul></li>
+                </div>
+            <!-- FOOTER -->
+      <div id="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="facebook.com/profile.php"><img src="image/fb.png"></a>
+                <a href="https://www.instagram.com/sand_n3_/"><img src="image/ig.png"></a>
+                <a href="https://github.com/mautidur"><img src="image/github.png"></a>
+                <a href="https://paypal.me/sayamautidur"><img src="image/donate.png"></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="#">Our Product</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+            </ul>
+            <p class="copyright">WANDERLUST © 2077</p>
+        </footer>
+    </div>
+    </body>
+</html>
